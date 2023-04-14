@@ -1,0 +1,53 @@
+/*     Global     */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    list-style-type: none;
+
+  }
+  html {
+    font-size: 62.5%;
+    line-height: 1.6;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  :root {
+    /*Colors*/
+    --text-light: #a9d5f4;
+    --text-dark: #383c66;
+    --secondary-light: #81b2e5;
+    --secondary-dark: #184682;
+    --highlight-dark: #F6AE2D;    
+  }
+  body {
+    color: var(--text-dark);
+    font-family: var(--content-font);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*Set Font Families for headers and p tags*/
+  body h1{
+    font-family: 'Jost', sans-serif;
+  }
+  body h2{
+    font-family: 'Fira Sans', sans-serif;
+  }
+  body h3{
+    font-family: 'Fira Sans', sans-serif;
+  }
+  body h4{
+    font-family: 'Fira Sans', sans-serif;
+  }
+  body p{
+    font-family: 'Jost', sans-serif;
+  }
+  body a{
+    font-family: 'Fira Sans', sans-serif;
+  }
+  

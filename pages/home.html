@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Home</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../styles/base.css" />
+    <link rel="stylesheet" href="../styles/home-page/home-mobile.css" />
+    <link rel="stylesheet" href="../styles/home-page/home-tablet.css" />
+    <link rel="stylesheet" href="../styles/home-page/home-desktop.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;700&family=Jost:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+
+    <!--JS-->
+    <script defer src="../scripts/homeLocalStorage.js"></script>
+    <script defer src="../scripts/homeFunction.js"></script>
+  </head>
+  <body>
+    <header>
+
+      <!--     Mobile Nav Section     -->
+
+      <nav class="mobile-nav" id="mobile-nav">
+        <ul>
+          <li><a href="#home-page">Home</a></li>
+          <li><a href="#html-page">HTML</a></li>
+          <li><a href="#css-page">CSS</a></li>
+          <li><a href="#frameworks-page">Frameworks</a></li>
+        </ul>
+        <button class="hamburger" id="toggle">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+        </button>
+      </nav>
+
+      <!--     Desktop Nav Section     -->
+
+      <nav class="desktop-nav">
+        <div class="nav-container">
+          <h2 class="logo"><a href="/index.html">1252</a></h2>
+          <ul>
+              <li><a href="#home-page" class="active">HOME</a></li>
+              <li><a href="#html-page">HTML</a></li>
+              <li><a href="#css-page">CSS</a></li>
+              <li><a href="#frameworks-page">FRAMEWORKS</a></li>
+          </ul>
+      </div>
+      </nav>
+    </header>
+    <main>
+      <!--     Hero Section     -->
+      <section class="hero-container" id="home-page">
+        <h1>
+          <span class="welcome">Welcome </span><br /><span
+            id="user-title"
+          ></span>
+          <span id="last-name"></span><br />
+          To Mission 1252
+        </h1>
+        <div class="hero-button-container">
+          <button><a href="#html-page">Begin Journey</a></button>
+          <button class="button-secondary">
+            <a href="/">Not a <span id="try-again"></span>?</a>
+          </button>
+        </div>
+        <div class="hero-image-container">
+          <img src="../assets/rocket.png" alt="space rocket blasting off from earth" width="200px" />
+        </div>
+
+        <!--Page SVG-->
+        <div class="custom-shape-divider-bottom-1679613047">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+              opacity=".25"
+              class="shape-fill"
+            ></path>
+            <path
+              d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+              opacity=".5"
+              class="shape-fill"
+            ></path>
+            <path
+              d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+
+        <!--     HTML Section     -->
+
+      </section>
+      <section class="html-container" id="html-page">
+        <article class="html-header">
+          <div class="heading-container">
+            <h2>HTML</h2>
+            <h3>Weeks 1 - 5</h3>
+          </div>
+          <img src="../assets/html.png" alt="logo for HTML5" width="200px" />
+        </article>
+
+        <article class="html-card-container ">
+          <div class="html-card html-syntax hidden">
+            <div class="card-info">
+              <h2>Weeks 1 - 3</h2>
+              <h3>Syntax, <span class="highlight">Syntax</span>, Syntax</h3>
+              <p>
+                We will spend the first 3 weeks flying through the dreaded
+                syntax of HTML. A long journey but fear not, this will keep you
+                on track for your remaining flight.
+              </p>
+              <button id="button-border">
+                <a href="/pages/404.html">Learn More </a>
+              </button>
+            </div>
+            <img src="../assets/html-syntax.png" alt="Man working at computer" width="200px" />
+          </div>
+          <div class="html-card html-forms hidden">
+            <div class="card-info">
+              <h2>Week 4</h2>
+              <h3>
+                All you can know about <span class="highlight">Forms</span>
+              </h3>
+              <p>
+                Here we will stop and refuel at the form station. You will
+                learn all there is to know about structure and function of
+                forms.
+              </p>
+              <button id="button-border">
+                <a href="/pages/404.html">Learn More </a>
+              </button>
+            </div>
+            <img src="../assets/html-forms.png" alt="Computer with html elements on screen" width="200px" />
+          </div>
+          <div class="html-card html-test hidden">
+            <div class="card-info">
+              <h2>Week 5</h2>
+              <h3><span class="highlight">Test</span> your knowledge!</h3>
+              <p>
+                This is where we check the map to make sure you're still on
+                course, hopefully you have been paying attention to the mission
+                details.
+              </p>
+              <button id="button-border">
+                <a href="/pages/404.html">Learn More </a>
+              </button>
+            </div>
+            <img src="../assets/html-test.png" alt="Man working at computer" width="200px" />
+          </div>
+        </article>
+      </section>
+
+      <!--     CSS Section     -->
+
+      <section class="css-container" id="css-page">
+        <article class="css-header">
+          <div class="heading-container">
+            <h2>CSS</h2>
+            <h3>Weeks 6 - 11</h3>
+          </div>
+          <img src="../assets/css.png" alt="Logo for CSS3" width="200px" />
+        </article>
+
+        <article class="css-card-container">
+          <div class="css-card css-syntax hide-background">
+            <div class="card-info">
+              <h2>Weeks 6 & 7</h2>
+              <h3>
+                Let's <span class="highlight">Lay</span> it
+                <span class="highlight">Out</span>
+              </h3>
+              <p>
+                Now that we have gathered our intel, you will learn how to
+                display it visually to the captain.
+              </p>
+              <button id="button-border">
+                <a href="/pages/404.html">Learn More </a>
+              </button>
+            </div>
+            <img src="../assets/css-flex.png" alt="Man working on layout of css elements" width="200px" />
+          </div>
+          <div class="css-card css-forms hide-background">
+            <div class="card-info">
+              <h2>Week 8</h2>
+              <h3>
+                <span class="highlight">Mobile</span> first is
+                <span class="highlight">Respons</span>abl<span class="highlight"
+                  >e</span
+                >
+              </h3>
+              <p>
+                Our engine room has many different screen sizes, here you will
+                make sure the controls will work on all of them.
+              </p>
+              <button id="button-border">
+                <a href="/pages/404.html">Learn More </a>
+              </button>
+            </div>
+            <img src="../assets/css-responsive.png" alt="Screen with multiple elements" width="200px" />
+          </div>
+          <div class="css-card css-test hide-background">
+            <div class="card-info">
+              <h2>Week 9</h2>
+              <h3>
+                To <span class="highlight">Flexbox</span> or to
+                <span class="highlight">grid</span>
+              </h3>
+              <p>
+                There's a proper tool for every job, take a little time here to
+                learn how they work and when to use them.
+              </p>
+              <button id="button-border">
+                <a href="/pages/404.html">Learn More </a>
+              </button>
+            </div>
+            <img src="../assets//css-layout.png" alt="Man working on css at computer" width="200px" />
+          </div>
+        </article>
+      </section>
+
+      <!--     Frameworks Section     -->
+
+      <section class="framework-container" id="frameworks-page">
+        <div class="framework-header">
+          <h2>Frameworks</h2>
+          <img src="../assets/bootstrap.png" alt="Logo for bootstrap" width="300px" />
+        </div>
+        <div class="framework-card-container">
+          <div class="framework-card">
+            <div class="card-info">
+              <h2>Week 11 & 12</h2>
+              <h3>Tie up those <span class="highlight">Bootstrap</span>s</h3>
+              <p>
+                Now that we know how to fly, we can start to manage our time and
+                learn how the autopilot system works.
+              </p>
+              <button id="button-border">
+                <a href="/pages/404.html">Learn More </a>
+              </button>
+            </div>
+            <img src="../assets/bootstrap-card.png" alt="screen with clean page elements" width="300px" />
+          </div>
+          <div class="framework-card">
+            <div class="card-info">
+              <h2>Week 13</h2>
+              <h3>
+                One More <span class="highlight">Test</span> To Rule Them All
+              </h3>
+              <p>
+                Report back to your commander for one final briefing of the
+                mission. It was a long journey, I hope you come prepared.
+              </p>
+              <button id="button-border">
+                <a href="/pages/404.html">Learn More </a>
+              </button>
+            </div>
+            <img src="../assets/final-exam.png" alt="screen with exam written on it" width="200px" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--     Footer Section     -->
+
+    <footer class="footer-container">
+      <div class="footer-wrapper">
+        <div class="footer-content">
+          <h2>This mission may be over, but the journey shall never end.</h2>
+        </div>
+        <div class="navigation-menu">
+          <ul>
+            <li><a href="#home-page">Home</a></li>
+            <li><a href="#html-page">HTML</a></li>
+            <li><a href="#css-page">CSS</a></li>
+            <li><a href="#frameworks-page">Frameworks</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copywrite-container">
+        <p>&copy; Copywrite 2023, All Rights Reserved</p>
+        <p>
+          Developed by
+          <a href="https://rorydeck.me/" target="_blank">Rory Deck</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

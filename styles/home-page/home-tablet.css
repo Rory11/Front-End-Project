@@ -1,0 +1,105 @@
+/*----- Tablet Devices -----*/
+
+@media screen and (min-width:768px){
+
+    /*----- Hero Section -----*/
+    
+    .hero-container h1{
+        font-size: 6rem;
+        line-height: 1.2;
+    }
+    .hero-container h1 .welcome{
+        font-size: 8rem;
+    }
+    .hero-button-container{
+        display: flex;
+        gap: 3rem;
+    }
+    .hero-container img{
+        width: 600px;
+        bottom: -10%;
+        left: 0;
+        right: 0;
+    }
+    .hero-button-container button{
+        padding: 2rem 4rem;
+        font-size: 1.6rem;
+    }
+
+    /*-----HTML Section-----*/
+
+    .html-header{
+        flex-direction: row;
+        gap: 5rem;
+        text-align: center;
+    }
+    .html-header h2{
+        font-size: 6.4rem;
+    }
+    .html-card{
+        border: 1px solid var(--text-light);
+        border-left: 1rem solid var(--text-light);
+        border-radius: 0.5px;
+        width: 80%;
+        flex-direction: row;
+    }
+    .card-info{
+        align-items: flex-start;
+        text-align: left;
+    }
+    .card-info button{
+        width: 15rem;
+    }
+
+    /*-----CSS Section-----*/
+
+    .css-header{
+        flex-direction: row-reverse;
+        gap: 5rem;
+        text-align: center;
+    }
+    .css-header h2{
+        font-size: 6.4rem;
+    }
+    .css-card{
+        border: 1px solid var(--text-light);
+        border-right: 1rem solid var(--text-light);
+        border-radius: 0.5px;
+        width: 80%;
+        flex-direction: row;
+    }
+
+
+    /*-----Framework Section-----*/
+
+    .framework-header{
+        flex-direction: row;
+        gap: 5rem;
+        text-align: center;
+    }
+    .framework-header h2{
+        font-size: 6.4rem;
+    }
+    .framework-card{
+        border: 1px solid var(--text-light);
+        border-radius: 0.5rem;
+        width: 80%;
+        flex-direction: row;
+    }
+    .framework-card img{
+        padding: 2rem;
+    }
+
+    /*-----Footer Section-----*/
+
+    .footer-wrapper{
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+    }
+    .copywrite-container{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2rem;
+    }
+}

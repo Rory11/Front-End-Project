@@ -1,0 +1,36 @@
+/*-----Desktop Devices-----*/
+
+@media screen and (min-width:1200px){
+
+    /*-----Hero Section-----*/
+    .headings h1{
+        font-size: 8rem;
+        width: 80%;
+    }
+    .headings h2{
+        font-size: 4.8em;
+    }
+    .scroll-down{
+        height: 20%;
+        position: relative;
+    }
+    .scroll-down i{
+        font-size: 5rem;
+    }
+
+    /*-----Form Section-----*/
+    
+    .form{
+        margin-bottom: 3rem;
+    }
+    #sub-button{
+        width: 80%;
+        transition: 0.5s ease-in-out;
+    }
+    #sub-button:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+        background-color: var(--text-light);
+        color: var(--text-dark);
+    }
+}

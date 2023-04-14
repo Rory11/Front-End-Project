@@ -1,0 +1,266 @@
+/*-----Mobile Devices-----*/
+
+.main{
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/*----- Hero Section-----*/
+
+.landing-wrapper{
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image: url(../../assets/landing-background.jpg);
+    background-position: right;
+    background-size: cover;
+    overflow-x: hidden;
+}
+.headings{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    position: relative;
+    z-index: 10;
+}
+.headings h1{
+    font-size: 4.8rem;
+    line-height: 1;
+    letter-spacing: 0.3rem;
+    padding: 2.4rem;
+    margin-top: 3.2rem;
+    color: var(--text-light);
+    animation-name: floatingText;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.headings h1:nth-of-type(even){
+    animation-delay: 1s;
+    color: black;
+}
+.headings span{
+    color: var(--highlight-dark);
+}
+.headings h2{
+    font-size: 3.2rem;
+    font-weight: 200;
+    padding: 1.6rem;
+    color: var(--text-light);
+    height: 50%;
+}
+.landing-wrapper p{
+    font-size: 2.4rem;
+    padding: 1.6rem;
+    text-transform: capitalize;
+    color: var(--text-light);
+}
+.scroll-down{
+    position: absolute;
+    bottom: 0;
+}
+.scroll-down i{
+    animation: flashingIcon 1s ease-in-out infinite forwards;
+}
+
+/*----- Form Section ----*/
+
+.form-container{
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    box-shadow: 0 0 12px 4px var(--text-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    gap: 2.4rem;
+    padding: 2.4rem;
+    margin: 1rem;
+    position: relative;
+    color: var(--text-light);
+    background-color: #00000040;
+}
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0%);
+}
+form legend{
+    font-size: 2.4rem;
+}
+form label{
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+form input{
+    padding: 0.2rem;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 0 6px 1px var(--secondary-light);
+    background-color: transparent;
+}
+form select{
+    background-color: black;
+    color: var(--text-light);
+    border: none;
+    padding: 1rem 4rem;
+    font-size: 2rem;
+}
+.landing-wrapper #sub-button{
+    padding: 1rem 2rem;
+    background:none;
+    border: 1px solid var(--text-light);
+    color: var(--text-green);
+    border-radius: 1rem;
+}
+select{
+    text-align: center;
+    padding: 1rem;
+    background-color: transparent;
+    color: var(--text-light);
+    border: 1px solid var(--text-light);
+}
+select option{
+    text-align: center;
+}
+.contact-info{
+    text-align: left;
+}
+
+/*----- Animated Background Items Section -----*/
+
+.animation-images{
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+}
+.asteroid1{
+    animation: asteroid1 10s ease-in 4s infinite forwards; 
+    position: absolute;
+    opacity: 0;
+    top: 40%;
+    left: 40%;
+}
+.asteroid2{
+    animation: asteroid2 10s ease-in infinite forwards; 
+    position: absolute;
+    opacity: 0;
+    bottom: 50%;
+    right: 50%;
+}
+.asteroid3{
+    animation: asteroid3 10s ease-in 2s infinite forwards;
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    right: 50%;
+}
+.asteroid4{
+    animation: asteroid4 10s ease-in 6s infinite forwards;
+    position: absolute;
+    opacity: 0;
+    bottom: 50%;
+    left: 50%;
+}
+
+/*----- Animations Section -----*/
+
+@keyframes floatingText{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+       transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes flashingIcon{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes asteroid1{
+    0%{
+        scale: 0;
+        translate: 0, 0;
+        rotate: 0deg;
+        opacity: 1;
+    }
+    100%{
+        scale: 3;
+        translate: 2000px -2000px;
+        rotate: 360deg;
+        opacity: 1;
+    }
+}
+@keyframes asteroid2{
+    0%{
+        scale: 0;
+        translate: 0, 0;
+        rotate: 0deg;
+        opacity: 1;
+    }
+    100%{
+        scale: 3;
+        translate: -2000px 200px;
+        rotate: 570deg;
+        opacity: 1;
+    }
+}
+@keyframes asteroid3{
+    0%{
+        scale: 0;
+        translate: 0, 0;
+        rotate: 0deg;
+        opacity: 1;
+    }
+    100%{
+        scale: 3;
+        translate: 2000px 200px;
+        rotate: 360deg;
+        opacity: 1;
+    }
+}
+@keyframes asteroid4{
+    0%{
+        scale: 0;
+        translate: 0, 0;
+        rotate: 0deg;
+        opacity: 1;
+    }
+    100%{
+        scale: 3;
+        translate: -2000px -800px;
+        rotate: 360deg;
+        opacity: 1;
+    }
+}

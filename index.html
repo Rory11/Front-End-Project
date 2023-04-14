@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Journey of 1252</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/landing-page/landing-mobile.css" />
+    <link rel="stylesheet" href="./styles/landing-page/landing-tablet.css" />
+    <link rel="stylesheet" href="./styles/landing-page/landing-desktop.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;700&family=Jost:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Javascript-->
+    <script defer src="./scripts/localStorage.js"></script>
+    <script defer src="./scripts/landingFunction.js"></script>
+  </head>
+  <body>
+    <main>
+      <!-- Hero Section -->
+      <section class="landing-wrapper">
+        <section class="headings">
+          <h1>Welcome to the Journey of <span>1252</span></h1>
+          <h2>Front End Development</h2>
+          <div class="scroll-down">
+            <p>
+              To begin your mission, <br />
+              tell me a little about yourself.
+            </p>
+            <p><i class="fa-solid fa-angles-down"></i></p>
+          </div>
+        </section>
+        <!-- Form Section -->
+        <section class="form-container">
+          <form
+            action="./pages/home.html"
+            method=""
+            id="form"
+            class="form show"
+          >
+            <fieldset class="name-info hidden">
+              <legend>Let's start with your name:</legend>
+              <br />
+              <label for="first-name">First Name:</label>
+              <input type="text" name="First Name" id="first-name" required />
+              <br />
+              <label for="last-name">Last Name:</label>
+              <input type="text" name="Last Name" id="last-name" required />
+            </fieldset>
+            <fieldset class="title-info hidden">
+              <legend>Who are you?</legend>
+              <label for="check-who">Studend or Professor:</label>
+              <br />
+              <select name="check-who" id="check-who" required>
+                <option value="" disabled selected hidden>-Select-</option>
+                <option value="Student">Student</option>
+                <option value="Professor">Professor</option>
+              </select>
+            </fieldset>
+            <fieldset class="contact-info hidden">
+              <legend>How can I get ahold of you?</legend>
+              <br />
+              <label for="email">Email:</label>
+              <input type="email" name="Email" id="email" required />
+              <br />
+              <label for="phone">Phone:</label>
+              <input type="tel" name="Phone" id="phone" />
+              <span>*Optional</span>
+            </fieldset>
+            <!--Confirm Buttons-->
+            <button type="submit" id="sub-button" class="hidden">
+              Start The Journey
+            </button>
+          </form>
+        </section>
+      </section>
+    </main>
+    <!-- Background Animation Images -->
+    <div class="animation-images">
+      <div class="asteroid1">
+        <img src="./assets/asteroid1.png" alt="asteroid moving to give perspective of flying through space" width="200px" />
+      </div>
+      <div class="asteroid2">
+        <img src="./assets/asteroid2.png" alt="asteroid moving to give perspective of flying through space" width="200px" />
+      </div>
+      <div class="asteroid3">
+        <img src="./assets/asteroid3.png" alt="asteroid moving to give perspective of flying through space" width="200px" />
+      </div>
+      <div class="asteroid4">
+        <img src="./assets/asteroid4.png" alt="asteroid moving to give perspective of flying through space" width="200px" />
+      </div>
+      <div class="animation5"></div>
+    </div>
+
+    <!--Font Awesome Icons-->
+    <script
+      src="https://kit.fontawesome.com/d6d58e9eb3.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

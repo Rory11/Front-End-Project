@@ -1,0 +1,44 @@
+/*-----Tablet Devices-----*/
+
+@media screen and (min-width:768px){
+    
+    /*-----Hero Section-----*/
+    .headings h1{
+        font-size: 6.4rem;
+        padding: 2rem;
+    }
+    .headings h2{
+        height: 20%;
+        font-size: 3.6rem;
+    }
+    .headings p{
+        width: 100vw;
+    }
+    /*-----Form Section-----*/
+    .form{
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+    .form legend{
+        font-size: 3.6em;
+        padding: 2rem;
+    }
+    .form label{
+        font-size: 2.4rem;
+    }
+    .form fieldset{
+        width: 100%;
+        text-align: left;
+        padding: 1rem;
+    }
+    .title-info{
+        display: flex;
+        gap: 2rem;
+    }
+    #sub-button{
+        margin: 0 auto;
+        font-size: 1.6em;
+        padding: 2rem 1rem;
+    }
+}
